@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  overflow: hidden;
+  background: rgb(20, 20, 20);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  z-index: 0;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  height: 80px;
+  background-color: #222;
+  box-shadow: 0em 0em 0.9em #000;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: white;
+}

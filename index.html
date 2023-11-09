@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particles</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="light-dark-mode.css" />
+
+    <script>
+      function toggleLightDarkMode() {
+        const body = document.body;
+        body.classList.toggle("light-mode");
+        body.classList.toggle("dark-mode");
+      }
+
+      function pickColor() {
+        const colorPicker = document.getElementById("colorPicker");
+        const selectedColor = colorPicker.value;
+        console.log("Selected Color (RGB): " + selectedColor);
+        // You can now use the selectedColor in your JavaScript code
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="canvas1"></canvas>
+    <div class="navbar">
+      <h1 id="test">
+
+        <input type="text" id="textInput" class="custom-input" maxlength="5">
+        <input type="range" id="Input" class="custom-input" min="0" max="1000" step="1">
+        <input type="range" id="Num" class="custom-input" min="1" max="10" step="1">
+
+
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='page2.html'">Page 2</button>
+        <button onclick="window.location.href='page3.html'">Page 3</button>
+        <button onclick="toggleLightDarkMode()">Toggle Mode</button>
+        <input type="color" id="colorPicker">
+        <button onclick="pickColor()">Pick Color</button>
+        <button id="conditionalButton">Click me!</button>
+      </h1>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
